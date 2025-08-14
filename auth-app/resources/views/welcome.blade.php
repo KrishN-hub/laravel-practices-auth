@@ -9,7 +9,7 @@
     <div class="container">
         <h1>Welcome to the Authentication App</h1>
         <p>
-            <a href="/login" class="btn btn-primary">Login</a>
+            <a href="/login" class="btn btn-info">Login</a>
             <a href="/registration" class="btn btn-secondary">Register</a>
         </p>
     </div>

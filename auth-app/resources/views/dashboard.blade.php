@@ -7,15 +7,19 @@
 <body>
     <div class="container">
         <h1>Dashboard</h1>
-        <p>Welcome, {{ Auth::user()->name }}!</p>
+        <p>Welcome to Dashboard</p>
+        {{-- <p>Welcome, {{ Auth::user()->name }}!</p> --}}
+
+
         <p>
-            <a href="{{ route('logout') }}" class="btn btn-danger"
+            <a href="" class="btn btn-danger"
                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 Logout
             </a>
         </p>
 
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+
+        <form id="logout-form" action="/logout" method="POST" style="display: none;">
             @csrf
         </form>
     </div>
